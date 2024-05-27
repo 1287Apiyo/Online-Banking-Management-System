@@ -23,16 +23,19 @@
             android:id="@+id/welcomeUserText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome, User"
-            android:textSize="24sp"/>
+            android:text="Welcome, Anne"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/totalBalanceText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
             android:text="Total Balance: 4,000,000.00"
             android:layout_below="@id/welcomeUserText"
-            android:textSize="20sp"/>
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/depositWithdrawButton"
@@ -72,18 +75,34 @@
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 
-
-
-
-
-    <TextView
-        android:id="@+id/recent_transactions_title"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recent Transactions"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:layout_marginTop="32dp"/>
+        android:layout_below="@id/withdraw_button"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/recent_transactions_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="8dp"/>
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/recent_transactions_list"
