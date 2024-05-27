@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#000000">
+
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:text="Deposit ?"
+        android:textColor="#FFFFFF"
+        android:background=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start"/>
+
+    <!-- Choose Account Dropdown -->
+    <Spinner
+        android:id="@+id/account_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue"
+        android:contextClickable="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Amount Input -->
+    <EditText
+        android:id="@+id/amount_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Amount"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Currency Label -->
+    <TextView
+        android:id="@+id/currency_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="KSHS"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Deposit and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/deposit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit"
+            android:textColor="@color/black"
+            android:background="@color/blue"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#FFFF"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>
