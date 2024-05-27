@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Deposit ?"
         android:textColor="#FFFFFF"
-        android:background=""
+        android:background="#19DDE9"
         android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="start"
@@ -54,9 +54,9 @@
         android:id="@+id/amount_edittext"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:hint="Amount"
-        android:background="@color/blue"
-        android:textColor="@color/white"
+        android:text="Amount"
+        android:background="#3A58F8"
+        android:textColor="#FFFF"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"/>
 
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:text="Deposit"
             android:textColor="@color/black"
-            android:background="@color/blue"
+            android:background="#19DDE9"
             android:layout_marginEnd="8dp"/>
 
         <Button
