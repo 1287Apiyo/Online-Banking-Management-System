@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Sign_up">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inika_bold"
+        android:text="Full name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <TextView
+        android:id="@+id/tvConPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inika_bold"
+        android:text="Confirm Password"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <TextView
+        android:id="@+id/tvPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inika_bold"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inika_bold"
+        android:text="Date of Birth"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="311dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="John Doe"
+        android:inputType="text"
+        android:textColor="#EFEFEF"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="311dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Johndoe@gmail.com"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <EditText
+        android:id="@+id/etDOB"
+        android:layout_width="311dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Eg. 01/01/2000"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inika_bold"
+        android:text="Email Address"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <EditText
+        android:id="@+id/etPswd"
+        android:layout_width="322dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <EditText
+        android:id="@+id/etConPswd"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="168dp"
+        android:layout_height="49dp"
+        android:text="SIGN UP"
+        android:textColor="#19DDE9"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="50dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
