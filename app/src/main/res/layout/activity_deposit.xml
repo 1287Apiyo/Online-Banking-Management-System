@@ -54,7 +54,7 @@
         android:id="@+id/amount_edittext"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="Amount"
+        android:text="  Amount"
         android:background="#3A58F8"
         android:textColor="#FFFF"
         android:inputType="numberDecimal"
