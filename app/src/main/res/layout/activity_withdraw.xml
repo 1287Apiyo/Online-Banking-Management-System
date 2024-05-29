@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -26,6 +27,7 @@
             android:textSize="15sp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
+            android:padding="10dp"
             android:gravity="start">
 
         </TextView>
@@ -35,7 +37,7 @@
     <!-- Tabs: "Card" and "PayPal" -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
         android:background="#3A58F8"
@@ -82,34 +84,79 @@
         </TextView>
 
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#3A58F8"
+        android:padding="10dp"
         android:text="Choose where you want to withdraw your money to"
-        android:textColor="@color/black"
-        android:background="#3A58F8">
+        android:textColor="@color/black">
 
     </TextView>
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#3A58F8"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+       tools:ignore="ExtraText"
+       >
 
-    <!-- Input Fields: Account Number and Account Name Owner -->
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Account Number"
-        android:inputType="number"/>
+       <EditText
+           android:id="@+id/Amount"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginRight="50dp"
+           android:background="@color/white"
+           android:gravity="start"
+           android:hint="Amount"
+           android:inputType="number"
+           android:padding="10dp"
+           android:textSize="15dp"
+           tools:ignore="TextSizeCheck" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Account Name Owner"/>
+       <EditText
+           android:id="@+id/NameOwner"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginRight="50dp"
+           android:background="@color/white"
+           android:gravity="start"
+           android:hint="Account Name Owner"
+           android:inputType="number"
+           android:padding="10dp"
+           android:textSize="15dp"
+           tools:ignore="TextSizeCheck" />
+
+       <EditText
+           android:id="@+id/AccountNo"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginRight="50dp"
+           android:background="@color/white"
+           android:gravity="start"
+           android:hint="Account Number"
+           android:inputType="number"
+           android:padding="10dp"
+           android:textSize="15dp"
+           tools:ignore="TextSizeCheck" />
+   </LinearLayout>
+
 
     <!-- Preview & Withdraw Button -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Preview & Withdraw"
-        android:background="#2196F3"
-        android:textColor="#FFFFFF"
         android:layout_marginTop="16dp"
-        android:padding="8dp"/>
+        android:background="#2196F3"
+        android:padding="8dp"
+        android:text="Preview & Withdraw"
+        android:textColor="#212121" />
 </LinearLayout>
