@@ -8,22 +8,25 @@
     android:background="#000000">
 
     <!-- Success Icon -->
-    <ImageView
-        android:id="@+id/success_icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_checkmark"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"/>
 
     <!-- Success Message -->
+
+
+    <ImageView
+        android:id="@+id/success_icon"
+        android:layout_width="307dp"
+        android:layout_height="434dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/baseline_price_check_24" />
+
     <TextView
         android:id="@+id/success_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
         android:text="Your Deposit has successfully been processed!!"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"/>
+        android:textSize="18sp" />
 </LinearLayout>
