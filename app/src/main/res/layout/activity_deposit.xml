@@ -29,36 +29,32 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_gravity="center_horizontal"
+        android:background="#19DDE9">
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="500dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="start"
+            android:layout_alignParentStart="true"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="0dp"
             android:background="#19DDE9"
             android:gravity="start"
-            android:text="Deposit "
+            android:text="Deposit"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
-
             android:id="@+id/help_icon"
-            android:layout_width="40dp"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="100dp"
-            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@id/title"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
             android:src="@drawable/baseline_help_24" />
-
     </RelativeLayout>
+
 
 
 
@@ -105,7 +101,7 @@
             android:layout_height="wrap_content"
             android:text="Deposit"
             android:textColor="@color/black"
-            android:background="#19DDE9"
+            android:background=""
             android:layout_marginEnd="8dp"/>
 
         <Button
